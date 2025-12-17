@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMAZON CLONE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100vh;
+      background: #f4f7ff;
+    }
+
+    .nav1 {
+      background: #0e1217;
+      color: white;
+      height: 70px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+
+    }
+
+    .nav2 {
+      background: #1F2833;
+      color: white;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+
+    }
+
+    .body1 {
+      min-height: 650px;
+      margin-left: 10px;
+      margin-right: 10px;
+      background:
+        linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 255, 255, 0.263), rgb(198, 197, 197)),
+        url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2025/ridha/GW_Unrec/D323819370_DesktopHero_3000x1200._CB778388200_.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding-top: 380px;
+
+    }
+
+    .card {
+      background-color: white;
+      padding: 10px;
+      width: 23%;
+      height: auto;
+
+
+
+    }
+
+
+    .details {
+      font-size: 23px;
+      font-weight: bold;
+      color: black;
+
+    }
+
+    .details1 {
+      display: inline-block;
+      margin-top: 15px;
+      color: #007185;
+      text-decoration: none;
+      font-size: 14px;
+
+    }
+
+    .deals-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .deals-grid img {
+      width: 100%;
+      height: 140px;
+      object-fit: contain;
+      display: block;
+
+    }
+
+
+    .details1:hover {
+      text-decoration: underline;
+    }
+
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .search-box {
+      display: flex;
+      width: 45%;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 8px 14px;
+      border: none;
+      background: #febd69;
+      cursor: pointer;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    /* NAV 2 */
+    .menu {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .menu span {
+      cursor: pointer;
+    }
+
+    .menu span:hover {
+      text-decoration: underline;
+    }
+
+
+    @media (max-width: 1200px) {
+      .body1 {
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+      }
+
+      .card {
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .body1 {
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .card {
+        width: 90%;
+        margin-top: 20px;
+      }
+
+      .deals-grid img {
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav1">
+    <div class="logo">AMAZON</div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search products">
+      <button>Search</button>
+    </div>
+
+    <div class="nav-right">
+      <span>Hello, Sign in</span>
+      <span>Orders</span>
+      <span>Cart</span>
+    </div>
+  </div>
+
+  <div class="nav2">
+    <div class="menu">
+      <span>All</span>
+      <span>Fresh</span>
+      <span>Amazon MiniTV</span>
+      <span>Sell</span>
+      <span>Best Sellers</span>
+      <span>Mobiles</span>
+      <span>Customer Service</span>
+    </div>
+  </div>
+
+  <div class="body1">
+    <div class="card">
+      <h3 class="details">Continue shopping deals</h3>
+      <div class="deals-grid">
+        <img src="https://m.media-amazon.com/images/I/719LvK7uHkL._AC_SY145_.jpg" alt="deals">
+        <img src="https://m.media-amazon.com/images/I/61eevIOH9GL._AC_SY145_.jpg" alt="deals">
+        <img src="https://m.media-amazon.com/images/I/8174YnTefkL._AC_SY145_.jpg" alt="deals">
+        <img src="https://m.media-amazon.com/images/I/81+DaZP4aSL._AC_SY145_.jpg" alt="deals">
+      </div>
+      <a href="#" class="details1">See more deals</a>
+
+    </div>
+    <div class="card">
+      <h3 class="details">Revamp your home in style</h3>
+      <div class="deals-grid">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"
+          alt="deals">
+      </div>
+      <a href="#" class="details1">Explore all</a>
+
+
+    </div>
+    <div class="card">
+      <h3 class="details">Bulk order discounts + Up to 18% GST savings</h3>
+      <div class="deals-grid">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/KitchenAppliances_186_116_10._SY116_CB777673831_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/dec/bau/ain/gw/ABdelivery_186_116._SY116_CB776314701_.jpg"
+          alt="deals">
+      </div>
+      <a href="#" class="details1">Create a free account </a>
+
+    </div>
+    <div class="card">
+      <h3 class="details">Appliances for your home | Up to 55% off</h3>
+      <div class="deals-grid">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
+          alt="deals">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
+          alt="deals">
+      </div>
+      <a href="#" class="details1">See more</a>
+
+    </div>
+    <div class="card">
+      <h3 class="details">Starting ₹149 | Headphones</h3>
+
+      <div class="deals-grid">
+        <img src="https://m.media-amazon.com/images/I/61u1VALn6JL._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/61kWB+uzR2L._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/61G9VC33fsL._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71G+8D8OkVL._AC_SY145_.jpg" alt="">
+      </div>
+
+      <a href="#" class="details1">See all offers</a>
+    </div>
+    <div class="card">
+      <h3 class="details">Starting ₹49 | Deals on home essentials</h3>
+
+      <div class="deals-grid">
+        <img src="https://m.media-amazon.com/images/I/71Xy0m0ZTTL._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71t1v4mYBJL._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71mP2N1K+GL._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/61+4p4JdV7L._AC_SY145_.jpg" alt="">
+      </div>
+
+      <a href="#" class="details1">Explore all</a>
+    </div>
+    <div class="card">
+      <h3 class="details">Automotive essentials | Up to 60% off</h3>
+
+      <div class="deals-grid">
+        <img src="https://m.media-amazon.com/images/I/61n0E7x2vWL._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/61XzKkQ0JTL._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/61F5jG7YQFL._AC_SY145_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71n5rZc0KJL._AC_SY145_.jpg" alt="">
+      </div>
+
+      <a href="#" class="details1">See more</a>
+    </div>
+    <div class="card">
+      <h3 class="details">Starting ₹199 | Amazon Brands & more</h3>
+
+      <div class="deals-grid">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Home/2024/PCQC/BedSheets_186x116._SY116_CB574365280_.jpg"
+          alt="">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Home/2024/PCQC/Curtains_186x116._SY116_CB574365280_.jpg"
+          alt="">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Home/2024/PCQC/IroningBoard_186x116._SY116_CB574365280_.jpg"
+          alt="">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Home/2024/PCQC/HomeDecor_186x116._SY116_CB574365280_.jpg"
+          alt="">
+      </div>
+
+      <a href="#" class="details1">See more</a>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+</body>
+
+</html>
